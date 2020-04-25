@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>♥♥The Javascript♥♥</title>
+</head>
+
+<body>
+    <ul>
+        <input type="text" name="textbox1" id="textbox1" placeholder="First Name" /> + <input type="text"
+            name="textbox2" id="textbox2" onclick="autoupdate()" />
+        <input type="submit" name="button" id="button1" onclick="myfunction()" value="=" />
+        <br /> Your answer is:--
+        <input type="text" name="textbox3" id="textbox3" readonly="true" />
+    </ul>
+    <script>
+        function myfunction() {
+            var first = document.getElementById("textbox1").value;
+            var sec = document.getElementById("textbox2").value;
+            document.getElementById("textbox3").value = first + sec;
+        }
+        function autoupdate() {
+            document.getElementById("textbox2").value = "DefaultLastName";
+        }
+
+    </script>
+
+</body>
+
+</html>
